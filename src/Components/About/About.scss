@@ -1,0 +1,69 @@
+.about-container{
+    min-height: 100vh;
+    margin-top: 4rem;
+
+    .wrapper{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @media screen and (max-width:768px){
+            display: flex;
+            flex-direction: column;
+        }
+        
+
+        .left{
+            
+
+            h1{
+                text-transform: uppercase;
+                font-size: 48px;
+                font-family:'Alfa Slab One';
+                letter-spacing: 3px;
+                color:#3d2514;
+
+                @media screen and (max-width:768px){
+                    font-size: 40px;
+                }
+            }
+
+            p{
+                letter-spacing: 1px;
+                width: 400px;
+	            font-family:'Bebas Neue';
+                margin: 2rem 0;
+
+            }
+
+            .btn{
+                background-color: #bf2222;
+                padding: 0.6rem 2rem;
+                border-radius: 8px;
+                color: #fff;
+                text-decoration: none;
+                transition: 0.3s ease-in;
+                box-shadow: 5px 10px 30px rgba(255, 2, 2, 0.336);
+
+                &:hover{
+                    background-color: transparent;
+                    border: 2px solid #bf2222;
+                    color: #3d2514;
+                }
+            }
+        }
+
+        .right{
+            
+            img{
+                height: 500px;
+                width: 500px;
+
+                @media screen and (max-width:768px){
+                    height: 450px;
+                    width: 450px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.container{
+    height: 580px;
+    width: 100%;
+    position: relative;
+    background-image: url('../Images/banner.png');
+    background-repeat: repeat;
+    background-position: center;
+
+
+    @media screen and (max-width:768px){
+        background: none;
+    }
+
+    .wrapper{
+        top: 60%;
+        left: 20%;
+        position: absolute;
+        text-align: left;
+        transform: translate(-25%,-55%);
+
+        @media screen and (max-width:768px){
+            left: 50%;
+            top: 60%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+
+        h3{
+	        font-family:'Bebas Neue';
+            font-size: 28px;
+            text-transform: uppercase;
+            color:#3d2514;
+            letter-spacing: 2px;
+
+            @media screen and (max-width:768px){
+                font-size: 24px;
+            }
+        }
+
+        h1{
+            font-family:'Alfa Slab One';
+            font-size: 58px;
+            letter-spacing: 5px;
+            color:#3d2514;
+
+            @media screen and (max-width:768px){
+                font-size: 48px;
+            }
+
+            span{
+                color: #bf2222;
+                border-bottom: 3px solid #3d2514;
+            }
+        }
+
+        .desc{
+            font-size: 23px;
+            color: #3d2514;
+
+            @media screen and (max-width:768px){
+                font-size: 20px;
+            }
+        }
+
+        .button{
+            margin-top: 2rem;
+            display: flex;
+
+            .header-btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                font-size: 24px;
+                text-decoration: none;
+                color: #fff;
+                background-color: #bf2222;
+                height: 50px;
+                width: 150px;
+                box-shadow: 5px 10px 30px rgba(255, 2, 2, 0.336);
+                transition: 0.3s ease-in;
+
+                &:hover{
+                    background-color: transparent;
+                    color: #3d2514;
+                    border: 2px solid #bf2222;
+                }
+
+                @media screen and (max-width:768px){
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(50%,-40%);
+
+                    height: 40px;
+                    width: 130px;
+                }
+            }
+        }
+    }
+
+}

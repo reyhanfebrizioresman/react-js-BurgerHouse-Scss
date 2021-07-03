@@ -1,0 +1,37 @@
+.products-container{
+    min-height: 100vh;
+    text-align: center;
+
+    h2{
+        margin-top: 5rem;
+        font-size: 45px;
+        color: #3d2514;
+        font-family:'Alfa Slab One';
+        letter-spacing: 5px;
+
+        @media screen and (max-width:768px){
+            font-size: 38px;
+        }
+    }
+    p{
+        margin-top: 1rem;
+        font-size: 18px;
+        color: #3d2514;
+        font-family:'Bebas Neue';
+        letter-spacing: 1px;
+
+        @media screen and (max-width:768px){
+            font-size: 16px;
+        }
+    }
+    .card-wrapper{
+        display: flex;
+        justify-content: center;
+        margin-top: 8rem;
+
+        @media screen and (max-width:768px){
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
